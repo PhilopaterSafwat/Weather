@@ -9,7 +9,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 ip()
 
 async function ip() {
-    const response = await fetch(`http://ip-api.com/json/?fields=61439`);
+    const response = await fetch(`https://api.ipfind.com/me?auth=49c4bd33-f049-4435-a3e1-3ccbb33c40c8`);
     const data = await response.json();
     const cityNow = data.city
     weather(cityNow)
