@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/cloudy.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-lg-5 py-5 " data-bs-theme="dark">
+        <div class="container-fluid container-lg">
+            <a class="navbar-brand d-flex gap-3" href="#">
+                <img src="images/logo.png" alt="logo" class="w-100 object-fit-contain">
+                <div class="logo d-flex flex-column">
+                    <h1 class="h5">Weather</h1>
+                    <span class="h6">tagline goes here</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarNav">
+                <ul class="navbar-nav ms-auto  gap-lg-2 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="">
+                        <input type="text" name="location" class="w-100 form-control py-3 px-4 search"
+                            placeholder="Find your location...">
+                        <input type="button" class="btn" value="Find">
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center p-3">
+                <div class="col-lg-4 today-forcast first-day p-0">
+
+                </div>
+                <div class="col-lg-4 today-forcast tommorow-forcast p-0 text-center">
+
+                </div>
+                <div class="col-lg-4 today-forcast after-tomorrow p-0 text-center">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="subscribe-form">
+                        <input type="email" class="form-control w-100 py-3 px-4 mb-4" placeholder="Enter your email to subscribe...">
+                        <input type="submit" value="Subscribe" class="btn">
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <div class="social-links d-flex gap-2">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

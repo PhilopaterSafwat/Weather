@@ -1,0 +1,161 @@
+body {
+    background-color: #1e202b;
+    color: #bfc1c8;
+}
+a{
+    text-decoration: none;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.navbar-brand span {
+    font-size: 10px;
+    color: #bfc1c8;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 3px 25px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.nav-link:focus,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+@media(max-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        text-align: center;
+        padding: 20px 0;
+        border-radius: 0;
+        background-color: #262936;
+        border: none;
+        border-bottom: 1px solid #ffffff1a;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link:first-child{
+        border-radius: 10px 10px 0 0;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link:last-child{
+        border-radius:  0 0 10px 10px;
+        border-bottom: none;
+    }
+    .nav-link:focus,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-color: #ffffff1a;
+    color: #009ad8;
+}
+}
+section{
+    min-height: 350px;
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+
+}
+section .col-lg-4 .forcast-content h2{
+    color: white;
+}
+section .col-lg-4 .forcast-content h2.location{
+    color: #bfc1c8;
+}
+form{
+    position: relative;
+}
+form input.form-control{
+    border-radius: 30px;
+    background-color: #1e202b;
+    border: none;
+    color: white;
+}
+form input.form-control:focus{
+    background-color: #1e202b;
+    box-shadow: none;
+    color: white;
+}
+
+form input.form-control::placeholder{
+    color: #bfc1c89c;
+}
+
+form .btn{
+    position: absolute;
+    background-color: #009ad8;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 30px;
+    padding: 0 40px;
+    color: white;
+}
+form .btn:hover{
+    background-color: #009ad8;
+    color: white;
+}
+section .date{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+section .today-forcast{
+    background-color: #323544;
+}
+section .deg{
+    font-size: 90px;
+}
+section .status{
+    color: #009ad8;
+}
+section .today-forcast:nth-child(1){
+    border-radius: 10px 0 0 10px;
+}
+section .today-forcast:nth-child(2){
+    background-color: #262936;
+}
+section .today-forcast:nth-child(3){
+    border-radius: 0 10px 10px 0;
+}
+section .col-lg-4 .forcast-content h2.minDeg {
+    color: #bfc1c8;
+}
+.icon-big{
+    width: 100px;
+}
+
+@media(max-width: 992px){
+    section .today-forcast:nth-child(1){
+        border-radius: 10px 10px 0 0;
+    }
+    section .today-forcast:nth-child(3){
+        border-radius: 0 0 10px 10px;
+    }
+}
+footer{
+    background-color: #262936;
+}
+.social-links a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #009ad8;
+    transition: 0.5s ease;
+}
+.social-links a:hover{
+    color: white;
+    background-color: #009ad8;
+}
+footer .btn{
+    padding: 2px 20px;
+}
